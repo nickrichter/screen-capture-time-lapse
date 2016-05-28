@@ -1,43 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Screen capture time lapse : A simple little AppleScript for doing time lapses of your screen on Mac OS.">
+    <title>Screen capture time lapse by nickrichter</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Screen capture time lapse</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1>Screen capture time lapse</h1>
+        <p>A simple little AppleScript for doing time lapses of your screen on Mac OS.</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/nickrichter/screen-capture-time-lapse">View on GitHub</a>
+        <p class="view"><a href="https://github.com/nickrichter/screen-capture-time-lapse">View the Project on GitHub <small>nickrichter/screen-capture-time-lapse</small></a></p>
 
-          <h1 id="project_title">Screen capture time lapse</h1>
-          <h2 id="project_tagline">A simple little AppleScript for doing time lapses of your screen on Mac OS.</h2>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/nickrichter/screen-capture-time-lapse/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/nickrichter/screen-capture-time-lapse/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+        <ul>
+          <li><a href="https://github.com/nickrichter/screen-capture-time-lapse/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nickrichter/screen-capture-time-lapse/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nickrichter/screen-capture-time-lapse">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
         <h2>
-<a name="screen-capture-time-lapse" class="anchor" href="#screen-capture-time-lapse"><span class="octicon octicon-link"></span></a>Screen Capture Time-Lapse</h2>
+<a id="screen-capture-time-lapse" class="anchor" href="#screen-capture-time-lapse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screen Capture Time-Lapse</h2>
 
 <p>This is a simple AppleScript applet that will take screen captures at a user specified interval and save them to a user specified folder.</p>
 
 <h3>
-<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it works</h3>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How it works</h3>
 
 <p>When launching the app it will detect how many displays you have connected. If the app detects that you have more than 1 display, it will ask what you want to capture. Due to the nature of Applescript dialog box button limitations, and the limitations of the <code>screencapture</code> terminal command, you will have two options.</p>
 
@@ -75,7 +72,7 @@
 <p>This makes for a nice, image sequence friendly, set of files.</p>
 
 <h3>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
 
 <p>There is no installation per se, but this is just a plain text file of the source code, and not executable. Since AppleScript's .scpt files are compiled, binary, files they are difficult to perform diffs on, and keep track of with version control. There are a couple options to get a compiled version of the script. The first is to simply open AppleScript Editor and paste the source code into a new file. Another is to open Terminal and do the following:</p>
 
@@ -87,17 +84,12 @@
 
 <p>The <code>-o</code> flag is the filename you want for the output. If the output is not specified, the default a.scpt will be used. It's also worthwhile to note, that <em>the output will be placed where the osacompile command is run from</em>. For example, if your present working directory is your user home directory, a.scpt will be put in your home directory even if screen-capture-time-lapse.applescript is on your desktop. That is why the <code>cd</code> in step 1 is important.</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Screen capture time lapse maintained by <a href="https://github.com/nickrichter">nickrichter</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/nickrichter">nickrichter</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
-
   </body>
 </html>
